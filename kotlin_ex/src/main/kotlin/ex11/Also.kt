@@ -1,12 +1,12 @@
 package org.example.ex11
 
-fun main(){
+fun main() {
     // also / 또한
     // let 과 달리 내부에서만 작동
 
     var userDto = UserDto(
         name = "홍길동"
-    ).also{dto: UserDto->
+    ).also { dto: UserDto ->
         println(dto)
 
 //        UserDto(
