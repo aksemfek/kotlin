@@ -13,7 +13,7 @@ fun main() {
     } ?: LocalDateTime.now()
     println("result $kst")
 
-    UserDto(name = "홍길동").let{
+    UserDto(name = "홍길동").let {
         logic(it)
     }
 }
@@ -36,6 +36,9 @@ fun logic(userDto: UserDto): UserResponse? {
 
 data class UserDto(
     var name: String? = null,
+    var age: Int? = null,
+    var email: String? = null,
+    var registeredAt: LocalDateTime? = null,
 )
 
 data class UserEntity(
